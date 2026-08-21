@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PalmChain - Traceability Dashboard</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Main Dashboard -->
+    <div class="dashboard-container">
+      <header class="glass-header">
+        <div class="logo">
+          <i class="fa-brands fa-envira text-green"></i> PalmChain
+        </div>
+        <nav>
+          <a href="#" class="active">Overview</a>
+          <a href="#">Transactions</a>
+          <a href="#">IoT Devices</a>
+          <a href="#">Settings</a>
+        </nav>
+        <div class="user-profile">
+          <img src="https://ui-avatars.com/api/?name=Admin&background=0D8B4E&color=fff" alt="User">
+        </div>
+      </header>
+
+      <main class="dashboard-content">
+        <div class="hero-section">
+          <h1>First-Mile Traceability. <br><span class="text-green">Secured by EVM Blockchain.</span></h1>
+          <p>Memantau pergerakan sawit dari kebun petani ke pengepul secara real-time dan immutable untuk kepatuhan EUDR.</p>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card glass-card">
+            <i class="fa-solid fa-leaf stat-icon"></i>
+            <h3>Total Supply</h3>
+            <p class="stat-value">12,450 <span class="unit">Kg</span></p>
+          </div>
+          <div class="stat-card glass-card">
+            <i class="fa-solid fa-users stat-icon"></i>
+            <h3>Active Farmers</h3>
+            <p class="stat-value">142</p>
+          </div>
+          <div class="stat-card glass-card">
+            <i class="fa-solid fa-link stat-icon"></i>
+            <h3>Smart Contracts</h3>
+            <p class="stat-value text-green">Active</p>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- Chatbot Widget -->
+    <div class="chatbot-widget" id="chatbot-widget">
+      <div class="chatbot-header" id="chatbot-toggle">
+        <i class="fa-solid fa-robot"></i> 
+        <span>PalmChain AI</span>
+        <i class="fa-solid fa-chevron-up toggle-icon"></i>
+      </div>
+      <div class="chatbot-body glass-card">
+        <div class="chat-messages" id="chat-messages">
+          <div class="message ai-message">
+            Halo! Saya asisten PalmChain AI. Ada yang bisa saya bantu terkait pelacakan data kelapa sawit hari ini?
+          </div>
+        </div>
+        <div class="chat-input-area">
+          <input type="text" id="chat-input" placeholder="Tanyakan data sawit..." autocomplete="off">
+          <button id="send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
