@@ -1,0 +1,4 @@
+langflow
+web3
+requests
+langchain-core
