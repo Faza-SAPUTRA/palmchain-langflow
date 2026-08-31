@@ -243,3 +243,50 @@ nav a:hover, nav a.active { color: var(--text-main); }
 }
 
 .typing-indicator { font-style: italic; color: var(--text-muted); font-size: 0.85rem; }
+
+/* AI Markdown Styles */
+.ai-message table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.85rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.ai-message th, .ai-message td {
+  padding: 0.6rem;
+  border: 1px solid var(--glass-border);
+  text-align: left;
+}
+
+.ai-message th {
+  background: rgba(13, 139, 78, 0.2);
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.ai-message a.cta-btn {
+  display: inline-block;
+  margin-top: 0.8rem;
+  padding: 0.6rem 1.2rem;
+  background: var(--primary);
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: 0.3s;
+  box-shadow: 0 4px 15px rgba(13, 139, 78, 0.3);
+}
+
+.ai-message a.cta-btn:hover {
+  background: #0a6b3b;
+  transform: translateY(-2px);
+}
+
+.ai-message ul {
+  margin-left: 1.2rem;
+  margin-top: 0.5rem;
+}
